@@ -1,4 +1,5 @@
 
+using ACMLib.Framework.Attribute;
 using ACMLib.Framework.Models;
 using System;
 using System.Collections;
@@ -10,9 +11,10 @@ using System.Threading.Tasks;
 namespace ACMLib.Framework.Solutions
 {
 
-    public class PlanTaskWorker : ITest, IGreed
+    [SolutionType(AlgorithmType = AlgorithmType.贪心)]
+    public class 规划工作所需工人 : ITest
     {
-        public dynamic TestMain()
+        public void Main()
         {
             int[] tasks = { 3, 2, 1 };
             int[] workers = { 0, 3, 3 };
@@ -20,7 +22,7 @@ namespace ACMLib.Framework.Solutions
             int pillStrength = 1;
 
             var count = this.MaxTaskAssign(tasks, workers, pills, pillStrength);
-            return count;
+            
         }
 
         public int MaxTaskAssign(int[] tasks, int[] workers, int pills, int strength)

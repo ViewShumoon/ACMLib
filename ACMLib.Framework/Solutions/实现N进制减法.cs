@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ACMLib.Framework.Solutions
 {
-    public class CalculateNSubtraction : ITest
+    public class 实现N进制减法 : ITest
     {
         private readonly Dictionary<char, int> charIntDictionary = new Dictionary<char, int>()
         {
@@ -48,14 +48,13 @@ namespace ACMLib.Framework.Solutions
             { 'z', 35 }
         };
 
-        public dynamic TestMain()
+        public void Main()
         {
             int nBase = 16; //int.Parse(IO.ReadLine());
             string string1 = "100"; //"1234567890";
             string string2 = "fff"; //"abcdefghij";
 
             var result = NSubtraction(nBase, string1, string2);
-            return result;
         }
 
         public dynamic NSubtraction(int nBase, string minuend, string subtrahend)

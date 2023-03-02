@@ -43,15 +43,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IO.cs" />
-    <Compile Include="Models\IGreed.cs" />
+    <Compile Include="Models\AlgorithmType.cs" />
+    <Compile Include="Models\DataStructure.cs" />
+    <Compile Include="Attribute\SolutionTypeAttribute.cs" />
+    <Compile Include="Common\IO.cs" />
     <Compile Include="Models\ITest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Solutions\CountInterviewRequirement.cs" />
-    <Compile Include="Solutions\CalculateNSubtraction.cs" />
-    <Compile Include="Solutions\PlanTaskWorker.cs" />
-    <Compile Include="Solutions\ShortestWayToFormString.cs" />
+    <Compile Include="Solutions\OD\关联端口组合并.cs" />
+    <Compile Include="Solutions\OD\单词倒序.cs" />
+    <Compile Include="Solutions\OD\对称字符串.cs" />
+    <Compile Include="Solutions\OD\计算完美走位.cs" />
+    <Compile Include="Solutions\字符串分割.cs" />
+    <Compile Include="Solutions\实现简易内存池.cs" />
+    <Compile Include="Solutions\计算最少需要的面试官数量.cs" />
+    <Compile Include="Solutions\实现N进制减法.cs" />
+    <Compile Include="Solutions\移除重复字符.cs" />
+    <Compile Include="Solutions\规划工作所需工人.cs" />
+    <Compile Include="Solutions\计算最少服务器广播次数.cs" />
+    <Compile Include="Solutions\构建字符串的最短路径.cs" />
+    <Compile Include="Solutions\统计连续子区间和.cs" />
+    <Compile Include="Solutions\进制转换.cs" />
+    <Compile Include="Test\句子逆序.cs" />
+    <Compile Include="Test\坐标移动.cs" />
+    <Compile Include="Test\字符串排序.cs" />
+    <Compile Include="Test\简单错误记录.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
@@ -60,5 +76,6 @@
   <ItemGroup>
     <Content Include=".gitignore" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
-﻿using ACMLib.Framework.Models;
+﻿using ACMLib.Framework.Attribute;
+using ACMLib.Framework.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,15 +8,16 @@ using System.Threading.Tasks;
 
 namespace ACMLib.Framework.Solutions
 {
-    public class ShortestWayToFormString : ITest, IGreed
+    [SolutionType(DataStructureType.字符串)]
+    public class 构建字符串的最短路径 : ITest
     {
-        public dynamic TestMain()
+        public void Main()
         {
             var pattern = "abc";
             var target = "abcbc";
 
             var result = ShortestWay(pattern, target);
-            return result;
+
         }
 
         public int ShortestWay(string pattern, string target)

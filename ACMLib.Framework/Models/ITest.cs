@@ -3,6 +3,11 @@ namespace ACMLib.Framework.Models
 
     public interface ITest
     {
-        dynamic TestMain();
+        void Main();
     }
+
+    //public interface ITest
+    //{
+    //    void TestMain();
+    //}
 }

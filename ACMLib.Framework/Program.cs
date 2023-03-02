@@ -1,6 +1,6 @@
 
-
 using ACMLib.Framework.Solutions;
+using ACMLib.Framework.Solutions.OD;
 
 namespace ACMLib.Framework
 {
@@ -8,9 +8,8 @@ namespace ACMLib.Framework
     {
         static void Main()
         {
-            var test = new CalculateNSubtraction();
-            var result = test.TestMain();
-            System.Console.WriteLine(result);
+            var test = new ×Ö·û´®·Ö¸î();
+            test.Main();
 
             System.Console.ReadKey();
         }

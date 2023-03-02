@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 
-namespace ACMLib {
+namespace ACMLib.Framework.Common {
 
     public static class IO
     {
-        public static string ReadInputLine()
+        public static string ReadLine()
         {
             string line;
             do
@@ -20,10 +20,11 @@ namespace ACMLib {
             var result = new List<int>();
             for (int i = 0; i <= count; i++)
             {
-                result.Add(int.Parse(ACMLib.IO.ReadInputLine()));
+                result.Add(int.Parse(ReadLine()));
             }
 
             return result;
         }
+
     }
 }

@@ -1,4 +1,5 @@
 
+using ACMLib.Framework.Attribute;
 using ACMLib.Framework.Models;
 using System;
 using System.Collections;
@@ -7,9 +8,10 @@ using System.Linq;
 
 namespace ACMLib.Framework.Solutions
 {
-    public class CountInterviewRequirement : ITest, IGreed
+    [SolutionType(AlgorithmType = AlgorithmType.贪心)]
+    public class 计算最少需要的面试官数量 : ITest
     {
-        public dynamic TestMain()
+        public void Main()
         {
             int maxCharge = 2;//int.Parse(IO.GetLine());
             int interviewCount = 4;//int.Parse(IO.GetLine());
@@ -22,8 +24,7 @@ namespace ACMLib.Framework.Solutions
             };
 
             var count = MinInterviewers(maxCharge, interviewCount, intervalList);
-            //System.Console.WriteLine(count);
-            return count;
+            System.Console.WriteLine(count);
         }
 
         public int MinInterviewers(int maxCharge, int interviewCount, int[][] intervals)
@@ -68,7 +69,7 @@ namespace ACMLib.Framework.Solutions
 
             for (int i = 0; i <= count; i++)
             {
-                var hours = ACMLib.IO.ReadInputLine().Split(' ');
+                var hours = ACMLib.Framework.Common.IO.ReadLine().Split(' ');
 
                 result[i] = new int[2]
                 {
